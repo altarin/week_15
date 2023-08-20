@@ -91,7 +91,7 @@
 // Подсказка: вам понадобится метод массивов split
 
 // const sentences = ['Hello, world!', 'How are you?'];
-// // console.log(sentences);
+// console.log(sentences);
 // let result = sentences.split(' ');
 // console.log(result);
 
@@ -99,26 +99,46 @@
 // Выведите сумму всех элементов массива используя цикл for..of. 
 // Массив numbers объявлен в Задании 7
 
+// let sum = 0;
 // for (let number of numbers) {
-//     let sum = 0;
-//     sum += numbers[number];
+//     sum += number;
 // }
 // console.log(sum);
 
 //Задание 13
 // Выведите длину каждого слова из массива строк в консоль
-const list = ['apple', 'banana', 'cherry'];
 
+// const list = ['apple', 'banana', 'cherry'];
+// for (let value of list){
+//     console.log(value.length);
+// }
 
 //Задание 14
 // Преобразуйте массив каждый элемент массива words в верхний регистр
 
+// const words = ['Summer', 'Autumn', 'winter', 'Spring'];
+// for (let i = 0; i < words.length; i+= 1){
+//     const word = words[i];
+//     let upperCaseWord = word.toUpperCase();
+//     words[i] = upperCaseWord;
+// }
+// console.log(words);
+
 //Задание 15
 // Подсчитайте количество гласных букв в строке
 // Подсказка: вам понадобится метод includes
-const greeting = 'Hello, world!';
-let vowelCount = 0;
-const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+// const greeting = 'Hello, world!';
+// let vowelCount = 0;
+// const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+// for(let x = 0; x < greeting.length; x++) {
+//     for (let y = 0; y < vowels.length; y++)
+//     if (greeting[x] === vowels[y]) {
+//         vowelCount += 1;
+//     }
+// }
+// console.log(vowelCount);
 
 //Задание 16
 // Объедините все строки массива в одну строку с пробелами между ними
@@ -128,29 +148,68 @@ const vowels = ['a', 'e', 'i', 'o', 'u'];
 
 //Задание 17
 // Выведите числа от 1 до 10 в консоль используя цикл while
-// let number = 1;
-// do{
+// let number = 0;
+// while (number < 10){
+//     number++;
 //     console.log(number);
-// } while (number <= 10);
+// }
+
 
 //Задание 18
 // Выведите числа от 1 до 10 в консоль в обратном порядке используя цикл while
+// let number = 1;
+// while (number <= 10){
+//     number--;
+// }
+// console.log(number);  
+
 
 //Задание 19
-// Проверьте, все ли элементы массива являются положительными числами используя цикл while
+// Проверьте, все ли элементы массива являются положительными числами 
+// используя цикл while
 // Подсказка: используйте директиву break
-const allNumbers = [1, 2, 3, -4, 5];
-let allPositive = true;
+// const allNumbers = [1, 2, 3, -4, 5];
+// let number = allNumbers[i];
+// let allPositive = true;
+// while (number < allNumbers.length){
+//     if(number < 0){
+//         break;
+//     }
+// }
+//     console.log(number);
 
 //Задание 20
 // Выведите значения элементов массива до первого отрицательного числа используя цикл do...while
-const random = [2, 4, 6, -3, 8, 10];
+// const random = [2, 4, 6, -3, 8, 10];
+// let i = random[i];
+// do {
+//     console.log(i);
+//     i++;
+// } while (i > 0);
+
 
 //Задание 21
 // Выведите числа от 1 до 100, пропуская числа, которые делятся на 3 используя цикл do...while
 
+// let i = 1;
+// do {
+//     console.log(i);
+//     i++;
+// } while (i <= 100);
+// if ((i % 3) !== 0);
+//     i++;
+
+
 //Задание 22
 // Запросить у пользователя числа, пока сумма введенных чисел не станет больше 100
+let sum = 0;
+let number = 0;
+do {
+    sum += number;
+    number = parseInt(prompt("Введите число: "));
+} while(sum >= 100);
+
+console.log(`сумма введенных чисел — ${sum}`);
 
 //Задание 23
 // Напишите функцию, которая изменит фоновый цвет всех элементов <h4> на странице на синий цвет
