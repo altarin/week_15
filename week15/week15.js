@@ -91,8 +91,8 @@
 // Подсказка: вам понадобится метод массивов split
 
 // const sentences = ['Hello, world!', 'How are you?'];
-// console.log(sentences);
-// let result = sentences.split(' ');
+// let sentString = sentences.join();
+// let result = sentString.split(' ');
 // console.log(result);
 
 //Задание 12
@@ -157,59 +157,76 @@
 
 //Задание 18
 // Выведите числа от 1 до 10 в консоль в обратном порядке используя цикл while
-// let number = 1;
-// while (number <= 10){
+// let number = 11;
+// while (number > 1){
 //     number--;
+//     console.log(number);
 // }
-// console.log(number);  
 
 
 //Задание 19
 // Проверьте, все ли элементы массива являются положительными числами 
 // используя цикл while
 // Подсказка: используйте директиву break
+
 // const allNumbers = [1, 2, 3, -4, 5];
 // let number = allNumbers[i];
 // let allPositive = true;
-// while (number < allNumbers.length){
-//     if(number < 0){
-//         break;
+
+// for (let number of allNumbers) {
+
+//     if (number === false){
+//     break;
 //     }
-// }
 //     console.log(number);
+// }
+
+
+// const collection = ['one', 'two', 'three', 'four', 'stop', 'five'];
+
+// let i = 0;
+// while (collection[i] !== 'stop') {
+//   console.log(collection[i]);
+//   i += 1;
+// }
 
 //Задание 20
-// Выведите значения элементов массива до первого отрицательного числа используя цикл do...while
+// Выведите значения элементов массива до первого отрицательного числа 
+// используя цикл do...while
+
 // const random = [2, 4, 6, -3, 8, 10];
-// let i = random[i];
-// do {
-//     console.log(i);
-//     i++;
-// } while (i > 0);
+
 
 
 //Задание 21
 // Выведите числа от 1 до 100, пропуская числа, которые делятся на 3 используя цикл do...while
 
-// let i = 1;
-// do {
-//     console.log(i);
-//     i++;
-// } while (i <= 100);
-// if ((i % 3) !== 0);
-//     i++;
+let i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i <= 100);
+
+  
 
 
 //Задание 22
 // Запросить у пользователя числа, пока сумма введенных чисел не станет больше 100
-let sum = 0;
-let number = 0;
-do {
-    sum += number;
-    number = parseInt(prompt("Введите число: "));
-} while(sum >= 100);
-
-console.log(`сумма введенных чисел — ${sum}`);
+// let sum = 0;
+// // let number = 0;
+// while(sum >= 100){
+//     let number = parseInt(prompt("Введите число: "));
+//     sum += number;
+// }
+// console.log(`сумма введенных чисел — ${sum}`);
+// let input,
+// sum = 0;
+// while ((input = prompt('Введите число!')) !== null) {
+// let number = +input; 
+// if (!isNaN(number))
+//     sum += number;
+// }
+// alert(sum);
 
 //Задание 23
 // Напишите функцию, которая изменит фоновый цвет всех элементов <h4> на странице на синий цвет
