@@ -173,41 +173,38 @@
 // let number = allNumbers[i];
 // let allPositive = true;
 
-// for (let number of allNumbers) {
-
-//     if (number === false){
-//     break;
-//     }
+// while (i < allNumbers.length) {
+//   if (number > 0) {
 //     console.log(number);
+//     i +=1;
+//   } else {
+//     break;
+//   }
 // }
 
-
-// const collection = ['one', 'two', 'three', 'four', 'stop', 'five'];
-
-// let i = 0;
-// while (collection[i] !== 'stop') {
-//   console.log(collection[i]);
-//   i += 1;
-// }
 
 //Задание 20
 // Выведите значения элементов массива до первого отрицательного числа 
 // используя цикл do...while
 
 // const random = [2, 4, 6, -3, 8, 10];
+// let i = 0;
+// do { 
 
+//     console.log(random[i]);
+//     i++;
+// }
+// while (i < random.length && random[i] <= 0);
 
 
 //Задание 21
 // Выведите числа от 1 до 100, пропуская числа, которые делятся на 3 используя цикл do...while
 
-let i = 1;
-do {
-    console.log(i);
-    i++;
-} while (i <= 100);
-
-  
+// let i = 1;
+// do {
+//     console.log(i);
+//     i++;
+// } while (i <= 100 && i % 3 !== 0);
 
 
 //Задание 22
@@ -219,14 +216,7 @@ do {
 //     sum += number;
 // }
 // console.log(`сумма введенных чисел — ${sum}`);
-// let input,
-// sum = 0;
-// while ((input = prompt('Введите число!')) !== null) {
-// let number = +input; 
-// if (!isNaN(number))
-//     sum += number;
-// }
-// alert(sum);
+
 
 //Задание 23
 // Напишите функцию, которая изменит фоновый цвет всех элементов <h4> на странице на синий цвет
